@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-
+import heroBoat from "@/assets/hero-boat.jpg";
 import nilavilakku from "@/assets/nilavilakku.png";
 import { CountdownCard } from "@/components/CountdownCard";
 import { EventCard } from "@/components/EventCard";
@@ -53,6 +53,14 @@ function Home() {
     <div className="min-h-screen">
       {/* Hero */}
       <section className="relative overflow-hidden">
+        <img
+          src={heroBoat}
+          alt="Vallam kali snake boat race on the Kerala backwaters"
+          width={1600}
+          height={912}
+          className="absolute inset-0 h-full w-full object-cover mix-blend-multiply opacity-90"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-cream/95 via-cream/80 to-transparent" />
         <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 md:px-8 md:py-24 lg:grid-cols-[1.15fr_0.85fr]">
           <motion.div
             initial={{ opacity: 0, y: 26 }}
