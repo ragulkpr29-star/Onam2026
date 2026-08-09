@@ -1,12 +1,11 @@
 import { Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { Phone, Mail, Globe, MapPin } from "lucide-react";
-import kecLogo from "@/assets/kec-logo.png.asset.json";
+import kecLogo from "@/assets/kec-logo.png";
 
 const quickLinks = [
   { to: "/", label: "Home" },
   { to: "/events", label: "Events" },
-  { to: "/gallery", label: "Gallery" },
 ] as const;
 
 const moreLinks = [
@@ -29,7 +28,7 @@ export function Footer() {
           <div className="flex items-center gap-3">
             <span className="inline-flex items-center justify-center rounded-lg bg-primary-foreground px-3 py-2">
               <img
-                src={kecLogo.url}
+                src={kecLogo}
                 alt="Kongu Engineering College logo"
                 className="h-10 w-auto object-contain"
                 loading="lazy"
@@ -53,20 +52,7 @@ export function Footer() {
             <MapPin size={13} className="mt-0.5 shrink-0" aria-hidden />
             Perundurai, Erode – 638 060, Tamil Nadu, India.
           </p>
-          <div className="mt-3 flex flex-wrap gap-x-5 gap-y-1.5 text-xs text-primary-foreground/70">
-            <span className="flex items-center gap-1.5">
-              <Phone size={12} aria-hidden /> 04294 226300
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Mail size={12} aria-hidden /> info@kongu.ac.in
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Globe size={12} aria-hidden /> www.kongu.ac.in
-            </span>
-          </div>
-          <p className="mt-4 text-[11px] text-primary-foreground/60">
-            Organised by the Students Union &amp; Cultural Club, KEC.
-          </p>
+
         </div>
 
         <div className="grid grid-cols-2 gap-6">

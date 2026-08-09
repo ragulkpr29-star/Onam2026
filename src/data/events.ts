@@ -1,7 +1,7 @@
 import pookalamImg from "@/assets/event-pookalam.jpg";
 import tugImg from "@/assets/event-tugofwar.jpg";
 import duoImg from "@/assets/event-duodance.jpg";
-import fashionAsset from "@/assets/event-fashion.png.asset.json";
+import fashionAsset from "@/assets/event-fashion.jpg";
 
 export type EventIcon = "flower" | "rope" | "dance" | "crown";
 
@@ -92,7 +92,7 @@ export const events: OnamEvent[] = [
     description:
       "Walk the ramp in traditional Kerala attire and showcase your own interpretation of festive elegance, confidence and creativity.",
     icon: "crown",
-    image: fashionAsset.url,
+    image: fashionAsset,
     teamSize: "2 to 6 Members",
     venue: "Open Air Theatre",
     date: "06 Sep 2026",

@@ -2,12 +2,11 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { ActionLink } from "./ActionButton";
-import kecLogo from "@/assets/kec-logo.png.asset.json";
+import kecLogo from "@/assets/kec-logo.png";
 
 const links = [
   { to: "/", label: "Home" },
   { to: "/events", label: "Events" },
-  { to: "/gallery", label: "Gallery" },
   { to: "/about", label: "About Onam" },
   { to: "/contact", label: "Contact" },
 ] as const;
@@ -16,7 +15,7 @@ function Logo() {
   return (
     <Link to="/" className="flex items-center gap-3" aria-label="Kongu Engineering College home">
       <img
-        src={kecLogo.url}
+        src={kecLogo}
         alt="Kongu Engineering College logo"
         className="h-10 w-auto sm:h-11"
         loading="eager"

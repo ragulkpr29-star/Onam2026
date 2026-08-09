@@ -1,12 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { ArrowRight, Images } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import heroBoat from "@/assets/hero-boat.jpg";
 import nilavilakku from "@/assets/nilavilakku.png";
 import { CountdownCard } from "@/components/CountdownCard";
 import { EventCard } from "@/components/EventCard";
 import { SectionTitle } from "@/components/SectionTitle";
-import { GalleryStrip } from "@/components/GalleryStrip";
 import { ActionLink } from "@/components/ActionButton";
 import { events } from "@/data/events";
 
@@ -74,9 +73,6 @@ function Home() {
               <ActionLink to="/events">
                 Explore Events <ArrowRight size={15} />
               </ActionLink>
-              <ActionLink to="/gallery" variant="outline">
-                View Gallery <Images size={15} />
-              </ActionLink>
             </motion.div>
           </motion.div>
 
@@ -107,24 +103,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Gallery strip */}
-      <section className="relative overflow-hidden bg-deep py-10">
-        <div className="mx-auto max-w-7xl px-6 md:px-8">
-          <div className="flex flex-wrap items-end justify-between gap-4">
-            <h2 className="font-display text-2xl font-bold text-primary-foreground">
-              Moments from Onam 2025
-            </h2>
-            <Link
-              to="/gallery"
-              className="font-ui inline-flex items-center gap-1.5 text-xs font-semibold text-accent transition-colors hover:text-primary-foreground"
-            >
-              View Full Gallery <ArrowRight size={13} />
-            </Link>
-          </div>
-        </div>
-        <div className="mt-6">
-          <GalleryStrip />
-        </div>
       </section>
     </div>
   );

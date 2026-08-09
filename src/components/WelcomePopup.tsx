@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { X } from "lucide-react";
-import kecLogo from "@/assets/kec-logo.png.asset.json";
+import kecLogo from "@/assets/kec-logo.png";
 
 const TARGET = new Date("2026-09-05T09:00:00+05:30").getTime();
 
@@ -66,7 +66,7 @@ export function WelcomePopup() {
 
             <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-primary-foreground p-2">
               <img
-                src={kecLogo.url}
+                src={kecLogo}
                 alt="Kongu Engineering College logo"
                 className="h-full w-full object-contain"
               />
